@@ -1,0 +1,257 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Noto Sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ========================================== */
+/* ´PESTAÑA UPPER */
+/* ========================================== */
+
+.sidenav {
+  position: fixed;
+  background-color: #FF204E;
+  padding-left: 20px;
+  padding-top: 20px;
+  width: 80px;
+  height: 100vh;
+  line-height: 35px;
+}
+
+.sidenav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.sidenav img {
+  width: 35px;
+  height: auto;
+}
+
+.login-icon {
+  position: absolute;
+  bottom: 2%
+}
+
+.upper {
+  display: fixed;
+  background-color: #201d33;
+  padding: 5px;
+  width: 100%;
+}
+
+.logo {
+  margin-left: 100px;
+  padding: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 230px;
+  height: auto;
+}
+
+.texto-inicia-sesion {
+  color: whitesmoke;
+  display: block;
+  position: absolute;
+  width: 240px;
+  top: 25px;
+  right: 260px;
+  font-size: 18px;
+  text-align: right;
+  line-height: 25px;
+}
+
+.pill {
+  position:absolute;
+  top: 23px;
+  right: 2%;
+  font-size: 18px;
+  padding : 5px;
+  width: 200px;
+  border-radius: 25px;
+}
+
+#iniciar-sesion {
+  position: absolute;
+  top: 68px;
+  right: 2%;
+}
+
+.pill:hover {
+  background-color: gray;
+  color: whitesmoke;
+}
+
+/* ========================================== */
+/* FIN DE PESTAÑA UPPER*/
+/* ========================================== */
+
+
+
+/* ========================================== */
+/* PESTAÑA BODY */
+/* ========================================== */
+
+.titulo-quienes-somos {
+  text-align: center;
+  font-style: bold;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+body {
+  background-color: #F7E1D7;
+  color: #2B2B2B;
+  min-height: 100vh !important;
+}
+
+h1 ,h2 {
+  font-family: Oswald, sans-serif;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.main {
+  /*border: dotted 10px black;*/
+  min-height: 65vh;
+  margin-right: 20px;
+  margin-left: 100px;
+  padding: 10px;
+}
+
+
+
+.columna-1 {
+  max-width: 100%;
+  flex-grow: 0;
+  align-self: center;
+}
+
+.columna-1 img {
+  width: 100%;
+  height: auto;
+  border: solid 3px black;
+  border-radius: 20px;
+}
+
+.cuerpo-1 {
+  margin-top: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  align-items: flex-start;
+  object-fit: contain;
+  justify-content: space-between 20px;
+  column-gap: 20px;
+}
+
+.columna-2 {
+  margin-top: -5px;
+  max-width: 50%;
+  flex-grow: 1;
+  align-self: flex-start;
+}
+
+.texto-columna-2 {
+  text-align: justify;
+}
+
+.cuerpo-2 {
+  /*border: solid 3px black;*/
+  margin: 20px;
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(400px, 1fr)
+  );
+  grid-template-rows: repeat(
+    auto-filt,
+    minmax(200px, 1fr)
+  );
+  gap: 10px;
+}
+
+
+.cuerpo-2 div:first-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.cuerpo-2 img {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  border: solid 3px black;
+  border-radius: 7px;
+}
+
+
+/* ========================================== */
+/* FIN DE PESTAÑA BODY*/
+/* ========================================== */
+
+
+/* ========================================== */
+/* PESTAÑA FOOTER */
+/* ========================================== */
+
+footer {
+  position: relative bottom;
+  background-color: #201d33;
+  color: white;
+  margin-bottom: 0px;
+  margin-top: 10vh;
+  padding-bottom: 15px;
+}
+
+footer p {
+  font-family: Archivo, sans-serif;
+  font-style: italic;
+}
+
+.footer-cuerpo {
+  /*border: dotted 10px red;*/
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-left: 120px;
+  margin-right: 20px;
+}
+
+/* FOOTER LEFT */
+
+.footer-left {
+  margin-top: 10px;
+}
+
+.social-box {
+  padding-top: 10px;
+}
+
+.social-box img {
+  width: 35px;
+  height: auto;
+}
+
+/* FOOTER RIGHT */
+
+.footer-right {
+  display: flex;
+  margin-top: 10px;
+  text-align: right;
+  margin-right: 20px;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.logo-footer img {
+  width: 80px;
+  height: auto;
+}
