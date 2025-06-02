@@ -13,80 +13,130 @@
 /* ========================================== */
 
 .sidenav {
-  position: fixed;
-  background-color: #FF204E;
-  padding-left: 20px;
-  padding-top: 20px;
-  width: 80px;
-  height: 100vh;
-  line-height: 35px;
+  display: flex;
+  background-color: black;
+  width: 1023px;
+  height: 5lh;
+  padding: 10px;
+}
+
+#logo--mobile--img {
+  position: left;
+  text-decoration: default;
+  pointer-events: all;
+  opacity: 1;
+  cursor: default;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 50px;
 }
 
 .sidenav a {
   text-decoration: none;
-  color: white;
-  display: block;
+  pointer-events: none;
+  opacity: 0;
+  cursor: not-allowed;
 }
 
-.sidenav img {
-  width: 35px;
-  height: auto;
+
+
+@media (min-width: 1024px) {
+  .sidenav {
+    position: fixed;
+    background-color: #FF204E;
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 80px;
+    height: 100vh;
+    line-height: 35px;
+    pointer-events: visible;
+    opacity: 1;
+    cursor: default;
+    }
+  
+  .sidenav #logo--mobile--img {
+    text-decoration: none;
+    pointer-events: none;
+    opacity: 0;
+    cursor: not-allowed;
+  }
 }
 
-.login-icon {
-  position: absolute;
-  bottom: 2%
-}
+
+
+/* .sidenav a {
+/*   text-decoration: none;
+/*   color: white;
+/*   display: block;
+/* }
+/* 
+/* .sidenav img {
+/*   width: 35px;
+/*   height: auto;
+/* }
+/* 
+/* .login-icon {
+/*   position: absolute;
+/*   bottom: 2%
+/* } */
 
 .upper {
-  display: fixed;
-  background-color: #201d33;
-  padding: 5px;
-  width: 100%;
+  text-decoration: none;
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0;
 }
 
-.logo {
-  margin-left: 100px;
-  padding: 10px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  width: 230px;
-  height: auto;
-}
+@media (min-width: 1024px) {
+  .upper {
+    display: fixed;
+    opacity: 1;
+    background-color: #201d33;
+    padding: 5px;
+    width: 100%;
+  } 
+  .logo {
+    margin-left: 100px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 230px;
+    height: auto;
+  }
+  .texto-inicia-sesion {
+    color: whitesmoke;
+    display: block;
+    position: absolute;
+    width: 240px;
+    top: 25px;
+    right: 260px;
+    font-size: 18px;
+    text-align: right;
+    line-height: 25px;
+  }
+  
+  .pill {
+    position:absolute;
+    top: 23px;
+    right: 2%;
+    font-size: 18px;
+    padding : 5px;
+    width: 200px;
+    border-radius: 25px;
+  }
+  
+  #iniciar-sesion {
+    position: absolute;
+    top: 68px;
+    right: 2%;
+  }
+  
+  .pill:hover {
+    background-color: gray;
+    color: whitesmoke;
+  }
 
-.texto-inicia-sesion {
-  color: whitesmoke;
-  display: block;
-  position: absolute;
-  width: 240px;
-  top: 25px;
-  right: 260px;
-  font-size: 18px;
-  text-align: right;
-  line-height: 25px;
 }
-
-.pill {
-  position:absolute;
-  top: 23px;
-  right: 2%;
-  font-size: 18px;
-  padding : 5px;
-  width: 200px;
-  border-radius: 25px;
-}
-
-#iniciar-sesion {
-  position: absolute;
-  top: 68px;
-  right: 2%;
-}
-
-.pill:hover {
-  background-color: gray;
-  color: whitesmoke;
-}
-
 /* ========================================== */
 /* FIN DE PESTAÑA UPPER*/
 /* ========================================== */
