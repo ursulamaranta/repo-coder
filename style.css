@@ -42,10 +42,12 @@
 
 @media (min-width: 1024px) {
   .sidenav {
-    position: fixed;
+    display: block;
+    position: absolute;
     background-color: #FF204E;
+    position: top;
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
     width: 80px;
     height: 100vh;
     line-height: 35px;
@@ -53,27 +55,31 @@
     opacity: 1;
     cursor: default;
     }
-  
   .sidenav #logo--mobile--img {
     text-decoration: none;
     pointer-events: none;
     opacity: 0;
     cursor: not-allowed;
   }
+  .sidenav img {
+    width: 35px;
+    height: auto;
+  }
+  .sidenav a {
+    text-decoration: default;
+    pointer-events: auto;
+    opacity: 1;
+    color: white;
+    position: relative;
+  }
+    .logo--mobile {
+    padding-top: 0px;
+    opacity: 0;
+  }
+
 }
 
-
-
-/* .sidenav a {
-/*   text-decoration: none;
-/*   color: white;
-/*   display: block;
-/* }
 /* 
-/* .sidenav img {
-/*   width: 35px;
-/*   height: auto;
-/* }
 /* 
 /* .login-icon {
 /*   position: absolute;
